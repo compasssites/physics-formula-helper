@@ -5,7 +5,7 @@ FROM python:3.10-slim
 WORKDIR /app
 
 # Copy app files
-COPY app.py formulas.csv requirements.txt ./
+COPY app.py formulas.csv constants.csv scientists.csv dimensions.csv requirements.txt ./
 
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
